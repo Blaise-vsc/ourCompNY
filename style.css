@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba(252, 252, 116, 0.137254902);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 480px) {
+  body {
+    padding: 3px;
+  }
+}
+
+.imgClass {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .imgClass {
+    padding-top: 3rem;
+  }
+}
+.imgClass img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 480px) {
+  .imgClass img {
+    font-size: 60%;
+  }
+}
+
+.main_nav {
+  width: 80vw;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  place-items: center;
+  background: rgba(93, 171, 220, 0.4941176471);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .main_nav {
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #151d28;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.slideContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 480px) {
+  .slideContainer {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+.slideParent {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 15px;
+  padding-top: 2rem;
+}
+@media (max-width: 480px) {
+  .slideParent {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+.hover {
+  display: none;
+}
+
+h3 {
+  display: flex;
+}
+
+.displayHover {
+  transition: all 0.3s;
+}
+.displayHover .hover {
+  display: none;
+}
+.displayHover:hover .tittle {
+  font-weight: bold;
+  color: rgba(65, 2, 2, 0.933);
+  background: rgba(255, 255, 255, 0.83);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 3px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.302);
+}
+.displayHover:hover .hover {
+  display: block;
+  background: rgba(255, 255, 255, 0.873);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 4px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.displayHover:hover h3 {
+  display: none;
+}
+
+.objects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+@media (max-width: 480px) {
+  .objects {
+    align-items: start;
+  }
+}
+
+.entrepriseObject {
+  font-size: 165%;
+}
+@media (max-width: 480px) {
+  .entrepriseObject {
+    font-size: 125%;
+  }
+}
+
+.mainObject {
+  font-size: 110%;
+}
+@media (max-width: 480px) {
+  .mainObject {
+    font-size: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+.main_nav {
+  width: 80vw;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  place-items: center;
+  background: #5dabdc7e;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  position: relative;
+  @media (max-width: 480px) {
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: $mainColor;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+.slideContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  @media (max-width: 480px) {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+.slideParent {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 15px;
+  padding-top: 2rem;
+  @media (max-width: 480px) {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+.hover {
+  display: none;
+}
+h3 {
+  display: flex;
+}
+.displayHover {
+  .hover {
+    display: none;
+  }
+  transition: all 0.3s;
+  &:hover {
+    .tittle {
+      font-weight: bold;
+      color: rgba(65, 2, 2, 0.933);
+      background: rgba(255, 255, 255, 0.83);
+      backdrop-filter: blur(3px);
+      padding: 3px 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.302);
+    }
+    .hover {
+      display: block;
+      background: rgba(255, 255, 255, 0.873);
+      backdrop-filter: blur(5px);
+      padding: 4px 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    h3 {
+      display: none;
+    }
+  }
+}
+.objects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  @media (max-width: 480px) {
+    align-items: start;
+  }
+}
+.entrepriseObject {
+  font-size: 165%;
+  @media (max-width: 480px) {
+    font-size: 125%;
+  }
+}
+.mainObject {
+  font-size: 110%;
+  @media (max-width: 480px) {
+    font-size: 90%;
+  }
+}
