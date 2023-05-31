@@ -62,6 +62,12 @@ body {
     width: 100vw;
     min-height: 100vh;
   }
+  .main_nav .slideForImg {
+    height: 30%;
+  }
+  .main_nav .slideForText {
+    height: 70%;
+  }
 }
 
 header {

@@ -11,6 +11,13 @@
   @media (max-width: 480px) {
     width: 100vw;
     min-height: 100vh;
+
+    .slideForImg {
+      height: 30%;
+    }
+    .slideForText {
+      height: 70%;
+    }
   }
 }
 header {
