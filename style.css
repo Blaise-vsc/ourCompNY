@@ -50,6 +50,10 @@ body {
   height: 100%;
 }
 
+button {
+  padding: 5px 15px;
+}
+
 .main_nav {
   width: 80vw;
   min-height: 90vh;
