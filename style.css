@@ -89,6 +89,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0rem 2rem;
+  z-index: 1000;
 }
 @media (max-width: 480px) {
   header {
