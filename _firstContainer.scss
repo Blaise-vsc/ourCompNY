@@ -8,6 +8,7 @@
   backdrop-filter: blur(5px);
   background-size: cover;
   position: relative;
+
   @media (max-width: 480px) {
     width: 100vw;
     min-height: 100vh;
