@@ -56,6 +56,10 @@ button {
   padding: 2px 15px;
 }
 
+.meeting {
+  color: #fbfc74;
+}
+
 .main_nav {
   width: 80vw;
   min-height: 90vh;
