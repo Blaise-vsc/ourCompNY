@@ -16,6 +16,7 @@ body {
   justify-content: center;
   padding: 2rem;
   font-family: "Rubik", sans-serif;
+  position: relative;
   @media (max-width: 480px) {
     padding: 3px;
   }
@@ -57,3 +58,4 @@ button {
 .btnbl {
   width: 80%;
 }
+

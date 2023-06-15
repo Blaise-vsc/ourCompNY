@@ -15,6 +15,7 @@ body {
   justify-content: center;
   padding: 2rem;
   font-family: "Rubik", sans-serif;
+  position: relative;
 }
 @media (max-width: 480px) {
   body {
@@ -62,6 +63,10 @@ button {
 
 .displayHover .localisation {
   text-decoration: none;
+}
+
+.btnbl {
+  width: 80%;
 }
 
 .main_nav {
@@ -151,6 +156,7 @@ h3 {
 }
 
 .displayHover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: all 0.3s;
 }
 .displayHover .hover {
@@ -210,6 +216,31 @@ h3 {
   .mainObject {
     font-size: 120%;
   }
+}
+
+.objects .forSociauxMedia .sociauxMediaContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia {
+  width: 100%;
+}
+.objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  flex-direction: column;
+}
+.objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia div i {
+  font-size: 140%;
+}
+.objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia div p {
+  font-size: 100%;
 }
 
 .displayHover {
