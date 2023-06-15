@@ -242,6 +242,11 @@ h3 {
 .objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia div p {
   font-size: 100%;
 }
+@media (max-width: 780px) {
+  .objects .forSociauxMedia .sociauxMediaContainer .nav_socMedia div p {
+    font-size: 75%;
+  }
+}
 
 .displayHover {
   width: 100%;
